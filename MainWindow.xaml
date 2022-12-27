@@ -1,0 +1,123 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph>
+
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Проект_Эксельсиор">
+                        <Bold>Проект «Эксельсиор»</Bold>
+                    </Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    <Run Foreground="Brown">Проект «Эксельсиор» (от лат. excelsior — «всё выше») — серия высотных парашютных прыжков со стратостата, совершенных капитаном ВВС США Джозефом Киттингером в 1959 и 1960 гг. для испытания многоступенчатой парашютной системы. В проекте Киттенгер установил мировые рекорды:</Run>
+                </Paragraph>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            высоты парашютного прыжка
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            длительности парашютного прыжка
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                           скорость, достигнутую человеком в свободном падении, оставшимся после этого в живых.
+                        </Paragraph>
+                    </ListItem>
+                   
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>Первый тест</Bold>
+                                </Paragraph>
+                                <Paragraph>
+                                    Первый тестовый прыжок «Эксельсиор I», был совершен 16 ноября 1959 года. Киттингер поднялся на высоту 23 300 метров и совершил прыжок с парашютом[1]. Во время этого прыжка стабилизирующий парашют раскрылся раньше времени, обвязался вокруг шеи Киттингера, из-за чего Киттингер вошел в штопор, вращаясь со скоростью 120 оборотов в минуту. Киттингер потерял сознание, однако выжил благодаря автоматическому открытию основного парашюта на высоте 3 тыс. метров.
+                                   </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="300" HorizontalAlignment="Right">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/1.jpg"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                    </TableRowGroup>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="300" HorizontalAlignment="Right">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/2.jpg"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>Второй тест</Bold>
+                                </Paragraph>
+                                <Paragraph>
+                                    Несмотря на то что Киттингер чуть не погиб во время первого прыжка, следующий прыжок «Эксельсиор II», он совершил уже через 3 недели. 11 декабря 1959 года Киттингер совершил прыжок с высоты 22 800 метров, пролетев в свободном падении 17 тыс. метров, после чего он раскрыл основной парашют[
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                    </TableRowGroup>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>Третий тест</Bold>
+                                </Paragraph>
+                                <Paragraph>
+                                    Третий и завершающий прыжок «Эксельсиор III» был совершен 16 августа 1960 года. Во время подъёма правая перчатка в скафандре Киттингера разгерметизировалась, из-за чего он стал испытывать боли от отморожения. Несмотря на это Киттингер продолжил подъём, пока не достиг 31 333 метров[2].
+
+Подъём на такую высоту занял один час и 31 минуту, превзойдя прошлый рекорд в 30 942 метра, установленный Девидом Симонсом в 1958 году, в рамках проекта «Project Manhigh  (англ.)рус.». Киттингер продержался на этой отметке 12 минут, после чего совершил прыжок.
+
+Малый стабилизирующий парашют успешно раскрылся и Киттингер снижался таким образом 4 минуты и 36 секунд[2]. Он раскрыл основной парашют на высоте 5 330 метров и успешно приземлился в пустыне Нью Мексико. Общее время прыжка составило 13 минут 45 секунд, при этом был установлен мировой рекорд самого высокого прыжка с парашютом[3]. Во время прыжка Киттингер развил максимальную скорость 988 км/ч, часть прыжка проходила при температуре окружающей среды −70 °C.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="300" HorizontalAlignment="Right">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/3.jpg"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal"/>
+    </Grid>
+</Window>
